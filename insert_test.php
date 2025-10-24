@@ -2,7 +2,7 @@
 require 'db.php'; // Include PDO connect
 
 // Test data for a soccer match
-$league = "Champions League";
+$league = "UEFA Champions League";
 $home_team = "Real Madrid";
 $away_team = "Liverpool";
 $home_score = 2;
