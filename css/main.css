@@ -32,3 +32,9 @@
     tr:hover {
       background: #00ffcc11;
     }
+
+    tr.highlight {
+  background-color: #00ffcc55;
+  transition: background-color 2s;
+}
+
