@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
 $db   = 'goal_score';
-$user = 'root'; 
-$pass = '';   
+$user = 'root';
+$pass = '';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -14,7 +14,7 @@ $options = [
 
 try {
     $pdo = new PDO($dsn, $user, $pass, $options);
-    echo "Connection success!";
+    // echo "Connection success!"; // <-- OVO UKLONI
 } catch (\PDOException $e) {
     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
