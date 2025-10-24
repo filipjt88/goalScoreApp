@@ -13,8 +13,6 @@ async function loadResults() {
         table.innerHTML = '<tr><td colspan="4">Nema dostupnih utakmica</td></tr>';
         return;
       }
-
-      // Napravi mape trenutnih redova po ID-u
       const currentRowsMap = new Map();
 
       table.innerHTML = newMatches.map(match => {
