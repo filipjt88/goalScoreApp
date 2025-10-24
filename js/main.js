@@ -31,7 +31,6 @@ async function loadResults() {
         `;
       }).join('');
 
-      // Dodaj highlight za promenjene rezultate
       newMatches.forEach(match => {
         const prevMatch = prevDataMap[sport].get(match.id);
         if (prevMatch && (prevMatch.home_score !== match.home_score || prevMatch.away_score !== match.away_score)) {
@@ -44,7 +43,6 @@ async function loadResults() {
         }
       });
 
-      // Update prethodne mape
       prevDataMap[sport] = currentRowsMap;
     }
 
@@ -56,8 +54,5 @@ async function loadResults() {
   }
 }
 
-// Prvi load odmah
 loadResults();
-
-// Auto refresh svake 30 sekundi
 setInterval(loadResults, 10000);
