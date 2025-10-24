@@ -49,8 +49,8 @@ if (!empty($data['data'])) {
         ]);
     }
 
-    echo "✅ Košarkaški podaci uspešno ubačeni u bazu!";
+    echo "Basketball data successfully entered into the database!";
 } else {
-    echo "⚠️ Nema dostupnih podataka.";
+    echo "No data available.";
 }
 ?>
