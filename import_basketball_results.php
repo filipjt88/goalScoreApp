@@ -31,8 +31,8 @@ if (!empty($data['data'])) {
 
     foreach ($data['data'] as $game) {
         $league = "NBA";
-        $home_team = $game['home_team']['full_name'] ?? '';
-        $away_team = $game['visitor_team']['full_name'] ?? '';
+        $home_team  = $game['home_team']['full_name'] ?? '';
+        $away_team  = $game['visitor_team']['full_name'] ?? '';
         $home_score = $game['home_team_score'] ?? null;
         $away_score = $game['visitor_team_score'] ?? null;
         $match_date = $game['date'] ?? '';
