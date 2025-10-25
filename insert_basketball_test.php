@@ -1,7 +1,6 @@
 <?php
 require 'db.php'; // Connect PDO
 
-
 $league = "NBA";
 $home_team = "Los Angeles Lakers";
 $away_team = "Golden State Warriors";
