@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';
-$db   = 'goal_score';
-$user = 'root';
-$pass = '';
+$host    = 'localhost';
+$db      = 'goal_score';
+$user    = 'root';
+$pass    = '';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
