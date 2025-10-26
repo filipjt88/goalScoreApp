@@ -37,9 +37,9 @@ if (!empty($data['response'])) {
         $source_api = 'API-Football';
 
         $stmt->execute([
-            ':league' => $league,
-            ':home_team' => $home_team,
-            ':away_team' => $away_team,
+            ':league'     => $league,
+            ':home_team'  => $home_team,
+            ':away_team'  => $away_team,
             ':home_score' => $home_score,
             ':away_score' => $away_score,
             ':match_date' => $match_date,
