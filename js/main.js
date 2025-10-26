@@ -35,7 +35,7 @@ async function loadResults() {
           const row = table.querySelector(`tr[data-id="${match.id}"]`);
           if (row) {
             row.classList.add('highlight');
-            // Fade-out posle 2 sekunde
+            // Fade-out after 2 seconds
             setTimeout(() => row.classList.remove('highlight'), 2000);
           }
         }
@@ -48,7 +48,7 @@ async function loadResults() {
     renderTable(basketballTable, data.basketball, 'basketball');
 
   } catch (err) {
-    console.error("Greška pri učitavanju rezultata:", err);
+    console.error("Error loading results:", err);
   }
 }
 
