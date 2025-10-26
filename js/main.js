@@ -16,8 +16,8 @@ async function loadResults() {
       const currentRowsMap = new Map();
 
       table.innerHTML = newMatches.map(match => {
-        const id = match.id;
-        currentRowsMap.set(id, match);
+             const id = match.id;
+             currentRowsMap.set(id, match);
 
         return `
           <tr data-id="${id}">
