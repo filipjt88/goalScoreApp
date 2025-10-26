@@ -47,8 +47,8 @@ if (!empty($data['response'])) {
         ]);
     }
 
-    echo "✅ Podaci uspešno ubačeni u bazu!";
+    echo "Data successfully inserted into the database!";
 } else {
-    echo "⚠️ Nema podataka za uneti upit.";
+    echo "There is no data for the entered query.";
 }
 ?>

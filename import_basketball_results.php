@@ -30,7 +30,7 @@ if (!empty($data['data'])) {
     ");
 
     foreach ($data['data'] as $game) {
-        $league = "NBA";
+        $league     = "NBA";
         $home_team  = $game['home_team']['full_name'] ?? '';
         $away_team  = $game['visitor_team']['full_name'] ?? '';
         $home_score = $game['home_team_score'] ?? null;
