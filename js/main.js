@@ -2,10 +2,10 @@ let prevDataMap = { football: new Map(), basketball: new Map() };
 
 async function loadResults() {
   try {
-    const res = await fetch('get_results.php');
+    const res  = await fetch('get_results.php');
     const data = await res.json();
 
-    const footballTable = document.querySelector('#footballTable tbody');
+    const footballTable   = document.querySelector('#footballTable tbody');
     const basketballTable = document.querySelector('#basketballTable tbody');
 
     function renderTable(table, newMatches, sport) {
