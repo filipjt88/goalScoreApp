@@ -1,9 +1,9 @@
 <?php
 require 'db.php';
 
-$apiKey = '86a166ebe14c23ea3591d3934b47b439';
+$apiKey   = '86a166ebe14c23ea3591d3934b47b439';
 $leagueId = 2; // Champions League
-$season = 2023;
+$season   = 2023;
 
 $url = "https://v3.football.api-sports.io/fixtures?league=$leagueId&season=$season";
 
@@ -28,9 +28,9 @@ if (!empty($data['response'])) {
     ");
 
     foreach ($data['response'] as $match) {
-        $league = $match['league']['name'] ?? 'Unknown';
-        $home_team = $match['teams']['home']['name'] ?? '';
-        $away_team = $match['teams']['away']['name'] ?? '';
+        $league     = $match['league']['name'] ?? 'Unknown';
+        $home_team  = $match['teams']['home']['name'] ?? '';
+        $away_team  = $match['teams']['away']['name'] ?? '';
         $home_score = $match['goals']['home'] ?? null;
         $away_score = $match['goals']['away'] ?? null;
         $match_date = $match['fixture']['date'] ?? '';
