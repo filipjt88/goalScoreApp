@@ -26,8 +26,7 @@ $data = json_decode($response, true);
 if (!empty($data['data'])) {
     $stmt = $pdo->prepare("
         INSERT INTO basketball_matches (league, home_team, away_team, home_score, away_score, match_date, source_api)
-        VALUES (:league, :home_team, :away_team, :home_score, :away_score, :match_date, :source_api)
-    ");
+        VALUES (:league, :home_team, :away_team, :home_score, :away_score, :match_date, :source_api)");
 
     foreach ($data['data'] as $game) {
         $league     = "NBA";
