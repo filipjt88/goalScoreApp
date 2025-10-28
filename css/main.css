@@ -1,3 +1,9 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
  body {
       font-family: Arial, sans-serif;
       background: #121212;
@@ -5,9 +11,11 @@
       text-align: center;
       padding: 20px;
     }
+
     h1 {
       color: #00ffcc;
     }
+
     .container {
       display: flex;
       justify-content: center;
@@ -15,6 +23,7 @@
       gap: 40px;
       margin-top: 30px;
     }
+
     table {
       border-collapse: collapse;
       background: #1e1e1e;
@@ -22,18 +31,21 @@
       overflow: hidden;
       box-shadow: 0 0 10px #00ffcc33;
     }
+
     th, td {
       padding: 10px;
       border-bottom: 1px solid #333;
     }
+
     th {
       background: #00ffcc22;
     }
+
     tr:hover {
       background: #00ffcc11;
     }
 
-    tr.highlight {
+  tr.highlight {
   background-color: #00ffcc55;
   transition: background-color 2s;
 }
