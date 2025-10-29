@@ -8,6 +8,7 @@ $season   = 2023;
 $url = "https://v3.football.api-sports.io/fixtures?league=$leagueId&season=$season";
 
 $curl = curl_init();
+
 curl_setopt_array($curl, [
     CURLOPT_URL => $url,
     CURLOPT_RETURNTRANSFER => true,

@@ -1,4 +1,5 @@
 <?php
+
 $host    = 'localhost';
 $db      = 'goal_score';
 $user    = 'root';
