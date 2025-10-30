@@ -28,7 +28,7 @@ if (!empty($data['response'])) {
         VALUES (:league, :home_team, :away_team, :home_score, :away_score, :match_date, :source_api)
     ");
 
-    foreach ($data['response'] as $match) {
+    foreach ($data['response'] as $match) { // data
         $league     = $match['league']['name'] ?? 'Unknown';
         $home_team  = $match['teams']['home']['name'] ?? '';
         $away_team  = $match['teams']['away']['name'] ?? '';
