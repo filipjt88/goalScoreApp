@@ -20,8 +20,7 @@ curl_setopt_array($curl, [
 
 $response = curl_exec($curl);
 curl_close($curl);
-
-$data = json_decode($response, true);
+$data     = json_decode($response, true);
 
 echo "<pre>";
 print_r($data);

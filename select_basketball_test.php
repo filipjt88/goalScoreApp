@@ -1,8 +1,8 @@
 <?php
 require 'db.php';
 
-$sql = "SELECT * FROM basketball_matches";
-$stmt = $pdo->query($sql);
+$sql     = "SELECT * FROM basketball_matches";
+$stmt    = $pdo->query($sql);
 $matches = $stmt->fetchAll();
 
 echo "<pre>";
