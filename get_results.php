@@ -17,7 +17,7 @@ if ($type === 'football') {
     $football = $pdo->query("SELECT * FROM football_matches ORDER BY match_date DESC LIMIT 10")->fetchAll();
     $basketball = $pdo->query("SELECT * FROM basketball_matches ORDER BY match_date DESC LIMIT 10")->fetchAll();
     echo json_encode([
-        'football' => $football,
+        'football'   => $football,
         'basketball' => $basketball
     ]);
 }
