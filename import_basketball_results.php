@@ -4,7 +4,7 @@ require 'db.php';
 $apiKey = 'acf6304e-d385-48e4-b542-2d5570ff2b6b';
 $url    = "https://api.balldontlie.io/v1/games?per_page=10";
 
-$curl = curl_init();
+$curl   = curl_init();
 curl_setopt_array($curl, [
     CURLOPT_URL => $url,
     CURLOPT_RETURNTRANSFER => true,
