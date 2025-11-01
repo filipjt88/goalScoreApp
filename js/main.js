@@ -1,5 +1,7 @@
 let prevDataMap = { football: new Map(), basketball: new Map() };
 
+
+// Load results
 async function loadResults() {
   try {
     const res  = await fetch('get_results.php');
@@ -15,6 +17,7 @@ async function loadResults() {
       }
       const currentRowsMap = new Map();
 
+      // Table 
       table.innerHTML = newMatches.map(match => {
              const id = match.id;
              currentRowsMap.set(id, match);
