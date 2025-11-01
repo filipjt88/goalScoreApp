@@ -2,7 +2,7 @@
 require 'db.php';
 
 $apiKey   = '86a166ebe14c23ea3591d3934b47b439';
-$leagueId = 2; // Champions League
+$leagueId = 2; // Champions League id
 $season   = 2023;
 
 $url = "https://v3.football.api-sports.io/fixtures?league=$leagueId&season=$season";
