@@ -54,6 +54,7 @@ async function loadResults() {
     console.error("Error loading results:", err);
   }
 }
-
+// Load result
 loadResults();
+// Load result after 10 seconds
 setInterval(loadResults, 10000);
